@@ -62,9 +62,6 @@ h2 {
   pointer-events: none;
 }
 
-.sidenav a:active {
-}
-
 .home-section {
   position: absolute;
   margin: 15px;
@@ -72,6 +69,40 @@ h2 {
   height: fit-content;
   right: 50px;
   bottom: 70px;
+}
+
+.gallery-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 15vh;
+  flex-direction: column;
+}
+
+.gallery-container img {
+  border-radius: 50px;
+  width: 700px;
+  transition: all 0.5s ease-in-out;
+  opacity: 1;
+}
+
+.gallery-container img.fade-out {
+  opacity: 0;
+}
+
+.btns button {
+  background-color: snow;
+  border: none;
+  padding: 15px 45px;
+  font-size: 18px;
+  color: black;
+  font-weight: 700;
+  margin: 15px 15px;
+}
+
+.btns button:hover {
+  color: red;
+  background-color: red;
 }
 
 .msection p {
@@ -99,4 +130,8 @@ footer p {
 
 .hidden {
   opacity: 0%;
+}
+
+.active {
+  opacity: 100%;
 }
