@@ -1,0 +1,102 @@
+body {
+  width: 100%;
+  margin: 0 auto;
+  font-family: "Quicksand", sans-serif;
+  background-color: #101010;
+  color: white;
+}
+
+.outmain-frame {
+  position: relative;
+}
+
+.main-frame {
+  border: 1px solid white;
+  height: 91vh;
+  margin: 28px;
+}
+
+h1 {
+  margin: 35px 20px 2px 35px;
+  font-size: 50px;
+  width: 350px;
+  font-weight: lighter;
+}
+
+h2 {
+  font-size: 9px;
+  margin: 0px 20px 0 35px;
+  font-size: 12px;
+  width: 350px;
+  font-weight: lighter;
+}
+
+.sidenav ul {
+  list-style-type: none;
+  margin: 60px 35px;
+  padding: 0;
+  width: fit-content;
+  font-size: 12px;
+  text-align: left;
+}
+
+.sidenav button {
+  border: none;
+  background: none;
+  text-decoration: none;
+  color: white;
+  display: inline-block;
+  padding: 8px 0px;
+  transition: 0.15s;
+  width: fit-content;
+  font-weight: bold;
+}
+
+.sidenav button:hover {
+  letter-spacing: 0.1em;
+  text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 40px #fff, 0 0 80px #fff,
+    0 0 120px #fff;
+}
+
+.sidenav button:disabled:hover {
+  pointer-events: none;
+}
+
+.sidenav a:active {
+}
+
+.home-section {
+  position: absolute;
+  margin: 15px;
+  width: 150px;
+  height: fit-content;
+  right: 50px;
+  bottom: 70px;
+}
+
+.msection p {
+  margin-right: 20px;
+}
+
+.msection {
+  transition: 0.2s;
+}
+
+footer {
+  position: relative;
+  display: inline-block;
+  height: fit-content;
+  bottom: 20px;
+  left: 40px;
+}
+
+footer p {
+  margin: 0;
+}
+
+.activateNavButtons {
+}
+
+.hidden {
+  opacity: 0%;
+}
