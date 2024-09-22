@@ -16,6 +16,12 @@ body {
   font-size: 50px;
   font-weight: 200;
   transition: 0.1s ease;
+  width: 600px;
+  text-align: center;
+}
+
+#intro-text p {
+  margin: 0;
 }
 
 #intro-text span {
@@ -24,13 +30,15 @@ body {
 }
 
 .outmain-frame {
-  position: relative;
+  position: absolute;
+  width: 100%;
 }
 
 .main-frame {
   border: 1px solid white;
   height: 93vh;
   margin: 28.4px;
+  /*  background-color: red; */
 }
 
 h1 {
@@ -81,12 +89,30 @@ h2 {
 }
 
 .home-section {
+  pointer-events: none;
+  position: relative; /* veya fixed */
+  bottom: 70px; 
+  left: 0;
+  height: 61vh; /* Tüm yükseklik */
+  æ
+}
+
+.home-section img {
   position: absolute;
-  margin: 15px;
-  width: 180px;
+  bottom: 56px;
+  right: 230px;
+  width: 454px;
+  border-radius: 10px;
+  
+}
+
+.home-section p {
+  position: absolute;
+  width: 150px;
   height: fit-content;
-  right: 50px;
-  bottom: 5px;
+  right: 40px;
+  bottom: 40px;
+
 }
 
 .contact-section ul {
@@ -128,10 +154,9 @@ h2 {
 
 footer {
   position: absolute;
-  display: inline-block;
   height: fit-content;
-  bottom: -26px;
   left: 40px;
+  bottom: 0px;
 }
 
 footer p {

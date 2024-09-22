@@ -69,21 +69,26 @@ document.addEventListener("DOMContentLoaded", function () {
   const introDiv = document.getElementById("intro-text");
   const border = document.getElementById("main-frame");
 
-  introDiv.style.opacity = "1";
-  border.style.opacity = "0";
-  footer.style.opacity = "0";
+  introDiv.style.opacity = "0";
 
-  setTimeout(() => {
-    introDiv.style.animation = "fadeOut 1s ease forwards";
-  }, 1000);
+  //Intro();
 
-  setTimeout(() => {
-    border.style.opacity = "1";
-    footer.style.opacity = "1";
-    border.style.animation = "fadeIn 3s ease forwards";
-    footer.style.animation = "fadeIn 3s ease forwards";
-  }, 2000);
+  function Intro() {
+    introDiv.style.opacity = "1";
+    border.style.opacity = "0";
+    footer.style.opacity = "0";
 
+    setTimeout(() => {
+      introDiv.style.animation = "fadeOut 1s ease forwards";
+    }, 1000);
+
+    setTimeout(() => {
+      border.style.opacity = "1";
+      footer.style.opacity = "1";
+      border.style.animation = "fadeIn 3s ease forwards";
+      footer.style.animation = "fadeIn 3s ease forwards";
+    }, 2000);
+  }
   // Glow fonksiyonu (border elementine glow efekti ekleme)
   function applyGlowEffect() {
     border.style.animation = "none";
