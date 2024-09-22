@@ -91,10 +91,10 @@ h2 {
 .home-section {
   pointer-events: none;
   position: relative; /* veya fixed */
-  bottom: 70px; 
+  bottom: 70px;
   left: 0;
   height: 61vh; /* Tüm yükseklik */
-  æ
+  /*  background-color: rgba(255, 0, 0, 0.144); */
 }
 
 .home-section img {
@@ -103,7 +103,6 @@ h2 {
   right: 230px;
   width: 454px;
   border-radius: 10px;
-  
 }
 
 .home-section p {
@@ -112,7 +111,18 @@ h2 {
   height: fit-content;
   right: 40px;
   bottom: 40px;
+}
 
+.home-section figure {
+  margin: 0;
+}
+
+.home-section figcaption {
+  position: absolute;
+  bottom: 35px;
+  right: 610px;
+  font-style: italic;
+  font-size: 13px;
 }
 
 .contact-section ul {
