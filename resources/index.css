@@ -1,145 +1,176 @@
 body {
-    width: 100%;
-    margin: 0 auto;
-    font-family: "Quicksand", sans-serif;
-    background-color: #101010;
-    color: white;
+  width: 100%;
+  margin: 0 auto;
+  font-family: "Quicksand", sans-serif;
+  background-color: #101010;
+  color: white;
+  outline: none;
+  user-select: none;
+}
+
+#intro-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 50px;
+  font-weight: 200;
+  transition: 0.1s ease;
+}
+
+#intro-text span {
+  font-weight: 100;
+  padding-left: 30px;
 }
 
 .outmain-frame {
-    position: relative;
+  position: relative;
 }
 
 .main-frame {
-    border: 1px solid white;
-    height: 91vh;
-    margin: 28px;
+  border: 1px solid white;
+  height: 93vh;
+  margin: 28.4px;
 }
 
 h1 {
-    margin: 35px 20px 2px 35px;
-    font-size: 70px;
-    width: 400px;
-    font-weight: lighter;
+  margin: 35px 20px 2px 35px;
+  font-size: 70px;
+  width: 400px;
+  font-weight: lighter;
 }
 
 h2 {
-    margin: 0px 20px 0 35px;
-    font-size: 18px;
-    width: 350px;
-    font-weight: lighter;
+  margin: 0px 20px 0 35px;
+  font-size: 18px;
+  width: 350px;
+  font-weight: lighter;
 }
 
 .sidenav ul {
-    list-style-type: none;
-    margin: 60px 35px;
-    padding: 0;
-    width: fit-content;
-    font-size: 12px;
-    text-align: left;
+  list-style-type: none;
+  margin: 60px 35px;
+  padding: 0;
+  width: fit-content;
+  font-size: 12px;
+  text-align: left;
 }
 
 .sidenav button {
-    border: none;
-    background: none;
-    text-decoration: none;
-    color: white;
-    display: inline-block;
-    padding: 8px 0px;
-    transition: 0.15s;
-    width: fit-content;
-    font-weight: bold;
+  border: none;
+  background: none;
+  text-decoration: none;
+  color: white;
+  display: inline-block;
+  padding: 8px 0px;
+  transition: 0.15s;
+  width: fit-content;
+  font-weight: bold;
 }
 
 .sidenav button:hover {
-    letter-spacing: 0.1em;
-    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 40px #fff, 0 0 80px #fff,
-        0 0 120px #fff;
+  letter-spacing: 0.1em;
+  text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 40px #fff, 0 0 80px #fff,
+    0 0 120px #fff;
 }
 
 .sidenav button:disabled {
-    pointer-events: none;
-    text-shadow: 0 0 1px #ffffff3d, 0 0 2px #ffffff3d, 0 0 4px #ffffff3d,
-        0 0 8px #ffffff3d, 0 0 12px #ffffff3d;
+  pointer-events: none;
+  text-shadow: 0 0 1px #ffffff3d, 0 0 2px #ffffff3d, 0 0 4px #ffffff3d,
+    0 0 8px #ffffff3d, 0 0 12px #ffffff3d;
 }
 
 .home-section {
-    position: absolute;
-    margin: 15px;
-    width: 180px;
-    height: fit-content;
-    right: 50px;
-    bottom: 70px;
+  position: absolute;
+  margin: 15px;
+  width: 180px;
+  height: fit-content;
+  right: 50px;
+  bottom: 5px;
 }
 
 .contact-section ul {
-    list-style-type: none;
-    position: absolute;
-    margin: 15px;
-    width: 150px;
-    height: fit-content;
-    left: 20px;
-    bottom: 70px;
+  list-style-type: none;
+  position: absolute;
+  margin: 15px;
+  width: 150px;
+  height: fit-content;
+  left: 20px;
+  bottom: 70px;
 }
 
 .contact-section a {
-    display: inline-block;
-    padding: 5px;
-    text-decoration: none;
-    color: white;
-    transition: 0.2s;
+  display: inline-block;
+  padding: 5px;
+  text-decoration: none;
+  color: white;
+  transition: 0.2s;
+  width: 300px;
+}
+
+.contact-section i {
+  padding-right: 5px;
 }
 
 .contact-section a:hover {
-    letter-spacing: 0.1em;
-    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 40px #fff, 0 0 80px #fff,
-        0 0 120px #fff;
+  letter-spacing: 0.1em;
+  text-shadow: 0 0 1px #ffffff3d, 0 0 2px #ffffff3d, 0 0 4px #ffffff3d,
+    0 0 8px #ffffff3d, 0 0 12px #ffffff3d;
 }
 
 .msection p {
-    margin-right: 20px;
+  margin-right: 20px;
 }
 
 .msection {
-    transition: 0.2s;
+  transition: 0.2s;
 }
 
 footer {
-    position: relative;
-    display: inline-block;
-    height: fit-content;
-    bottom: 20px;
-    left: 40px;
+  position: absolute;
+  display: inline-block;
+  height: fit-content;
+  bottom: -26px;
+  left: 40px;
 }
 
 footer p {
-    margin: 0;
+  margin: 0;
 }
 
 .hidden {
-    opacity: 0%;
+  opacity: 0%;
 }
 
 .active {
-    opacity: 100%;
+  opacity: 100%;
 }
 
 @keyframes glowEffect {
-    0% {
-        border-color: white;
-        box-shadow: 0 0 3px white, 0 0 10px white;
-    }
-    100% {
-        border-color: white;
-        box-shadow: none;
-    }
+  0% {
+    border-color: white;
+    box-shadow: 0 0 3px white, 0 0 10px white;
+  }
+  100% {
+    border-color: white;
+    box-shadow: none;
+  }
 }
 
 @keyframes fadeIn {
-    0% {
-        opacity: 0;
-    }
-    100% {
-        opacity: 1;
-    }
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
 }
