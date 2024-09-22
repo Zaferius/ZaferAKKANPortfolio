@@ -18,15 +18,14 @@ body {
 
 h1 {
     margin: 35px 20px 2px 35px;
-    font-size: 50px;
-    width: 350px;
+    font-size: 70px;
+    width: 400px;
     font-weight: lighter;
 }
 
 h2 {
-    font-size: 9px;
     margin: 0px 20px 0 35px;
-    font-size: 12px;
+    font-size: 18px;
     width: 350px;
     font-weight: lighter;
 }
@@ -60,14 +59,14 @@ h2 {
 
 .sidenav button:disabled {
     pointer-events: none;
-    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 40px #fff, 0 0 80px #fff,
-        0 0 120px #fff;
+    text-shadow: 0 0 1px #ffffff3d, 0 0 2px #ffffff3d, 0 0 4px #ffffff3d,
+        0 0 8px #ffffff3d, 0 0 12px #ffffff3d;
 }
 
 .home-section {
     position: absolute;
     margin: 15px;
-    width: 150px;
+    width: 180px;
     height: fit-content;
     right: 50px;
     bottom: 70px;
