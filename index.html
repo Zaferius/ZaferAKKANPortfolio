@@ -1,111 +1,115 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./resources/index.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap"
-      rel="stylesheet"
-    />
-    <title>Zafer Akkan</title>
-  </head>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="./resources/index.css" />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+        />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap"
+            rel="stylesheet"
+        />
+        <title>Zafer Akkan</title>
+    </head>
 
-  <body>
-    <script src="./resources/script.js"></script>
+    <body>
+        <script src="./resources/script.js"></script>
 
-    <main class="outmain-frame">
-      <section class="main-frame">
-        <h1>Zafer Akkan</h1>
-        <h2>Designer & Developer</h2>
+        <main class="outmain-frame">
+            <section class="main-frame" id="main-frame">
+                <h1>Zafer Akkan</h1>
+                <h2>Designer & Developer</h2>
 
-        <div class="sidenav">
-          <ul>
-            <li>
-              <button
-                class="navButton homeButton"
-                onclick="chooseSection(this)"
-              >
-                Home
-              </button>
-            </li>
-            <li>
-              <button
-                class="navButton projectsButton"
-                onclick="chooseSection(this)"
-              >
-                Projects
-              </button>
-            </li>
-            <li>
-              <button
-                class="navButton infoButton"
-                onclick="chooseSection(this)"
-              >
-                Info
-              </button>
-            </li>
-            <li>
-              <button
-                class="navButton contactButton"
-                onclick="chooseSection(this)"
-              >
-                Contact
-              </button>
-            </li>
-          </ul>
-        </div>
+                <div class="sidenav">
+                    <ul>
+                        <li>
+                            <button
+                                class="navButton homeButton"
+                                onclick="chooseSection(this)"
+                            >
+                                Home
+                            </button>
+                        </li>
+                        <li>
+                            <button
+                                class="navButton projectsButton"
+                                onclick="chooseSection(this)"
+                            >
+                                Projects
+                            </button>
+                        </li>
 
-        <section class="home-section msection">
-          <div class="container">
-            <div>
-              <p class="t">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit
-                rem labore voluptates dolorum facere possimus laboriosam tenetur
-                distinctio non dolores, adipisci obcaec.
-              </p>
-            </div>
-          </div>
-        </section>
+                        <li>
+                            <button
+                                class="navButton contactButton"
+                                onclick="chooseSection(this)"
+                            >
+                                Contact
+                            </button>
+                        </li>
+                    </ul>
+                </div>
 
-        <section class="projects-section msection">
-          <div class="gallery-container">
-            <div id="gallery">
-              <img class="gallery-img" id="current-image" src="./resources/images/hellevatorGif.gif" alt="">
-            </div>
-            <div class="btns">
-              <button id="prev-button">Prev</button>
-              <button id="next-button">Nexts</button>
-            </div>
-          </div>
-         
-          
-         
-          </div>
-        </section>
+                <section class="home-section msection">
+                    <div class="container">
+                        <div>
+                            <p class="t">
+                                Born in 1998 Istanbul, Turkey. I started my
+                                software journey in 2017 with game development.
+                                To add different achievements to my career, I
+                                began developing interactive websites in the web
+                                field, which is my passion.
+                            </p>
+                        </div>
+                    </div>
+                </section>
 
-        <section class="info-section msection">
-          <div class="container">
-            <div>
-              <p class="t">info</p>
-            </div>
-          </div>
-        </section>
+                <section class="projects-section msection"></section>
 
-        <section class="contact-section msection">
-          <div class="container">
-            <div>
-              <p class="t">contact</p>
-            </div>
-          </div>
-        </section>
-      </section>
+                <div class="view">
+                    <div class="block"></div>
+                    <div class="block"></div>
+                    <div class="block"></div>
+                    <div class="block"></div>
+                    <div class="block"></div>
+                    <div class="block"></div>
+                    <div class="block"></div>
+                    <div class="block"></div>
+                </div>
 
-      <footer>
-        <p>&reg; Zafer Akkan</p>
-      </footer>
-    </main>
-  </body>
+                <section class="contact-section msection">
+                    <div>
+                        <ul>
+                            <li>
+                                <a href=""
+                                    ><i class="fa fa-instagram"></i>
+                                    Instagram</a
+                                >
+                            </li>
+                            <li>
+                                <a href=""
+                                    ><i class="fa fa-linkedin-square"></i>
+                                    LinkedIn</a
+                                >
+                            </li>
+                            <li>
+                                <a href=""
+                                    ><i class="fa fa-github"></i> GitHub</a
+                                >
+                            </li>
+                        </ul>
+                    </div>
+                </section>
+            </section>
+
+            <footer id="footer">
+                <p>&reg; Zafer Akkan</p>
+            </footer>
+        </main>
+    </body>
 </html>
