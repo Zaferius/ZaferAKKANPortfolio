@@ -73,7 +73,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
   introDiv.style.opacity = "0";
 
-  //Intro();
+  Intro();
 
   function Intro() {
     introDiv.style.opacity = "1";

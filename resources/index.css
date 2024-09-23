@@ -14,15 +14,16 @@ body {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  font-size: 50px;
+  font-size: 40px;
   font-weight: 200;
   transition: 0.1s ease;
-  width: 600px;
+  width: 500px;
   text-align: center;
 }
 
 #intro-text p {
   margin: 0;
+  padding: 0;
 }
 
 #intro-text span {
@@ -196,7 +197,7 @@ footer p {
   }
 
   .main-frame {
-    height: 94.7vh;
+    height: 93vh;
     margin: 15px;
   }
 
@@ -221,6 +222,16 @@ footer p {
     left: 5px;
     bottom: 50px;
     font-size: 13px;
+  }
+
+  #intro-text {
+    font-size: 22px;
+    width: 250px;
+    text-align: center;
+  }
+
+  #intro-text span {
+    padding-left: 15px;
   }
 
   footer {
