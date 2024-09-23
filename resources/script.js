@@ -64,6 +64,8 @@ document.addEventListener("DOMContentLoaded", function () {
     chooseSection(button); // Buton var ise fonksiyonu çağır
   }
 
+  var contactAnchors = document.getElementsByClassName("contact-anchor");
+
   const buttons = document.querySelectorAll(".navButton");
   const footer = document.getElementById("footer");
   const introDiv = document.getElementById("intro-text");
