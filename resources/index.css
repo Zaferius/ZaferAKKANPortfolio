@@ -6,6 +6,7 @@ body {
   color: white;
   outline: none;
   user-select: none;
+  transition: 0.2s ease;
 }
 
 #intro-text {
@@ -168,7 +169,7 @@ footer {
   position: absolute;
   height: fit-content;
   left: 40px;
-  bottom: 0px;
+  bottom: 3px;
 }
 
 footer p {
@@ -185,13 +186,47 @@ footer p {
   pointer-events: auto;
 }
 
-@media screen and (max-width: 760px) {
+@media screen and (max-width: 768px) {
   .home-section img {
     width: 254px;
   }
 
   .home-section figcaption {
     right: 410px;
+  }
+
+  .main-frame {
+    height: 94.7vh;
+    margin: 15px;
+  }
+
+  h1 {
+    margin: 20px 0px 0px 20px;
+    font-size: 50px;
+  }
+
+  h2 {
+    margin: 0px 20px 0 20px;
+    font-size: 15px;
+    width: 350px;
+    font-weight: lighter;
+  }
+
+  .contact-section ul {
+    list-style-type: none;
+    position: absolute;
+    margin: 0px;
+    width: 150px;
+    height: fit-content;
+    left: 5px;
+    bottom: 50px;
+    font-size: 13px;
+  }
+
+  footer {
+    font-size: 13px;
+    left: 20px;
+    bottom: -8px;
   }
 }
 
