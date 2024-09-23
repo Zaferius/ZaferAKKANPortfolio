@@ -59,7 +59,7 @@ function chooseSection(button) {
 }
 
 document.addEventListener("DOMContentLoaded", function () {
-  var button = document.getElementsByClassName("contactButton")[0]; // İlk homeButton öğesini al
+  var button = document.getElementsByClassName("homeButton")[0]; // İlk homeButton öğesini al
   if (button) {
     chooseSection(button); // Buton var ise fonksiyonu çağır
   }
