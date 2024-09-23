@@ -214,37 +214,37 @@ footer p {
   }
 
   .image-container {
-    top: 425px;
+    position: absolute;
+    top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, -35%);
 
-    width: 80%;
+    width: 87.5%;
     min-width: 50px;
-    max-width: 700px;
+    max-width: 750px;
+
+    height: 33vh;
 
     padding: 0;
     margin: 0;
-    background-color: white;
-    border-radius: 10px;
   }
 
   .home-section p {
     padding: 0;
     margin: 0;
 
-    font-size: 15px;
+    font-size: 3vw;
     width: 60%;
-    min-width: 200px;
 
     z-index: 20;
     position: absolute; /* Konumlandırmayı tam kontrol et */
-    top: 70%; /* Alt taraftan 150px uzaklıkta olsun */
+    top: 75%; /* Alt taraftan 150px uzaklıkta olsun */
     left: 50%; /* Yatayda ortala */
     transform: translateX(-50%); /* Tam ortalamak için sola kaydır */
   }
 
   .main-frame {
-    height: 93vh;
+    height: 96vh;
     margin: 15px;
   }
 
@@ -282,9 +282,7 @@ footer p {
   }
 
   footer {
-    font-size: 13px;
-    left: 20px;
-    bottom: -8px;
+    display: none;
   }
 }
 
