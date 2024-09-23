@@ -44,17 +44,22 @@ body {
   /*  background-color: red; */
 }
 
+.title-container {
+  margin: 0;
+  display: inline-block;
+}
+
 h1 {
   margin: 35px 20px 2px 35px;
-  font-size: 70px;
-  width: 400px;
+  font-size: 6vw; /* Ekran genişliğinin %8'i kadar */
+  width: fit-content;
   font-weight: lighter;
 }
 
 h2 {
   margin: 0px 20px 0 35px;
-  font-size: 18px;
-  width: 350px;
+  font-size: 2vw; /* Ekran genişliğinin %3'ü kadar */
+  width: fit-content;
   font-weight: lighter;
 }
 
@@ -100,17 +105,19 @@ h2 {
 }
 
 .home-section p {
-  position: absolute;
+  position: fixed;
   width: 150px;
   height: fit-content;
-  right: 2px;
-  bottom: 2%;
+  right: 25px;
+  bottom: 6%;
 }
 
 .image-container {
   position: fixed;
   display: inline-block;
-  width: 500px;
+  width: 45%;
+  min-width: 400px;
+  max-width: 600px;
   height: 252px;
   top: 64.3%;
   right: 215px;
@@ -201,32 +208,37 @@ footer p {
 
 @media screen and (max-width: 768px) {
   .home-section {
-    bottom: 37.5%;
-    height: 93vh; /* Tüm yükseklik */
-    /* background-color: rgba(255, 0, 0, 0.144); */
+    position: relative; /* Konumlandırmayı kontrol etmek için */
+    height: 100vh; /* Ekranın tamamını kapla */
+    text-align: center; /* Metni merkezle */
   }
 
   .image-container {
-    width: 300px;
-    height: 150px;
-    top: 50%;
+    top: 425px;
     left: 50%;
     transform: translate(-50%, -50%);
+
+    width: 80%;
+    min-width: 50px;
+    max-width: 700px;
+
+    padding: 0;
+    margin: 0;
   }
 
   .home-section p {
-    text-align: center;
+    padding: 0;
+    margin: 0;
 
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, 110%);
-
-    font-size: 13px;
-    width: 250px;
-
-    height: fit-content;
+    font-size: 15px;
+    width: 60%;
+    min-width: 200px;
 
     z-index: 20;
+    position: absolute; /* Konumlandırmayı tam kontrol et */
+    top: 70%; /* Alt taraftan 150px uzaklıkta olsun */
+    left: 50%; /* Yatayda ortala */
+    transform: translateX(-50%); /* Tam ortalamak için sola kaydır */
   }
 
   .main-frame {
