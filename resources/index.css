@@ -224,6 +224,8 @@ footer p {
 
     padding: 0;
     margin: 0;
+    background-color: white;
+    border-radius: 10px;
   }
 
   .home-section p {
