@@ -1,5 +1,6 @@
 body {
   width: 100%;
+  max-width: 100%;
   margin: 0 auto;
   font-family: "Quicksand", sans-serif;
   background-color: #101010;
@@ -7,6 +8,7 @@ body {
   outline: none;
   user-select: none;
   transition: 0.2s ease;
+  overflow: hidden; /* Hide scrollbars */
 }
 
 #intro-text {
@@ -39,8 +41,8 @@ body {
 
 .main-frame {
   border: 1px solid white;
-  height: 93vh;
-  margin: 28.4px;
+  height: 93.6vh;
+  margin: 28.4px 28.4px 0 28.4px;
   /*  background-color: red; */
 }
 
@@ -100,7 +102,7 @@ h2 {
   pointer-events: none !important;
   position: relative; /* veya fixed */
   bottom: 43%;
-  height: 93vh; /* Tüm yükseklik */
+  height: 100vh; /* Tüm yükseklik */
   /*  background-color: rgba(255, 0, 0, 0.144); */
 }
 
@@ -207,6 +209,30 @@ footer p {
 }
 
 @media screen and (max-width: 768px) {
+  .sidenav {
+  }
+
+  .sidenav ul {
+    display: flex;
+    margin-left: 0;
+    margin-right: 0;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 90%);
+  }
+
+  .sidenav button {
+    padding-left: 30px;
+    width: auto;
+    margin: 0;
+    padding: 8px 10px;
+  }
+
+  .sidenav button:last-child {
+    margin-right: 0; /* Son butonun sağ tarafındaki boşluğu kaldır */
+  }
+
   .home-section {
     position: relative; /* Konumlandırmayı kontrol etmek için */
     height: 100vh; /* Ekranın tamamını kapla */
@@ -244,8 +270,9 @@ footer p {
   }
 
   .main-frame {
-    height: 96vh;
+    height: 90vh;
     margin: 15px;
+    margin: 15px 15px 0 15px;
   }
 
   h1 {
