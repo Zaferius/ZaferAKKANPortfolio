@@ -152,12 +152,12 @@ h2 {
 .projects-section ul {
     list-style-type: none;
     position: absolute;
-    margin: 15px;
+    margin: 0;
     margin-right: 55px;
-    width: 50%;
-    height: fit-content;
+    width: 44%;
     right: 20px;
     bottom: 100px;
+    height: 60vh;
     text-align: right;
     font-weight: 100;
     font-size: 35px;
@@ -165,7 +165,7 @@ h2 {
 
 .projects-section a {
     display: inline-block;
-    padding: 15px 0;
+    padding: 2vh 0;
     text-decoration: none;
     color: white;
     transition: 0.2s;
@@ -247,7 +247,7 @@ footer p {
         position: relative;
         top: 50%;
         left: 50%;
-        transform: translate(-50%, 90%);
+        transform: translate(-50%, -50%);
     }
 
     .sidenav button {
@@ -311,7 +311,7 @@ footer p {
 
         z-index: 20;
         position: absolute; /* Konumlandırmayı tam kontrol et */
-        top: 32.5%; /* Alt taraftan 150px uzaklıkta olsun */
+        top: 40%; /* Alt taraftan 150px uzaklıkta olsun */
         left: 50%; /* Yatayda ortala */
         transform: translateX(-50%); /* Tam ortalamak için sola kaydır */
 
@@ -327,7 +327,6 @@ footer p {
         background-color: green;
         z-index: 500;
         border: 1px solid red;
-        border: 2px solid red;
     }
 
     .contact-section ul {
