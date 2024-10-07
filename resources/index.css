@@ -170,11 +170,18 @@ h2 {
     color: white;
     transition: 0.2s;
     width: fit-content;
+    margin: 0;
 }
 
 .projects-section a:hover {
     text-shadow: 0 0 1px #ffffff3d, 0 0 2px #ffffff3d, 0 0 4px #ffffff3d,
         0 0 8px #ffffff3d, 0 0 12px #ffffff3d;
+}
+
+.alt-info {
+    font-size: 13px; /* Alt bilgi yazı boyutu */
+    color: white; /* Daha soluk bir renk */
+    margin-top: -10px; /* Üst boşluk ekle */
 }
 
 .contact-section ul {
@@ -298,7 +305,7 @@ footer p {
     }
 
     .main-frame {
-        height: 90vh;
+        height: 96vh;
         margin: 15px;
         margin: 15px 15px 0 15px;
     }
@@ -311,7 +318,7 @@ footer p {
 
         z-index: 20;
         position: absolute; /* Konumlandırmayı tam kontrol et */
-        top: 40%; /* Alt taraftan 150px uzaklıkta olsun */
+        top: 30%; /* Alt taraftan 150px uzaklıkta olsun */
         left: 50%; /* Yatayda ortala */
         transform: translateX(-50%); /* Tam ortalamak için sola kaydır */
 
