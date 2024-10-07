@@ -200,6 +200,7 @@ footer p {
 .hidden {
   opacity: 0%;
   pointer-events: none;
+  pointer-events: none;
 }
 
 .active {
