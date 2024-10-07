@@ -327,6 +327,7 @@ footer p {
         background-color: green;
         z-index: 500;
         border: 1px solid red;
+        border: 2px solid red;
     }
 
     .contact-section ul {
