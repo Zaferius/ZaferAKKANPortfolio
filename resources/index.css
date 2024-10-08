@@ -108,24 +108,23 @@ h2 {
 
 .home-section p {
   position: fixed;
-  width: 150px;
   height: fit-content;
+  width: 150px;
   right: 25px;
-  bottom: 6%;
+  bottom: 4%;
 }
 
 .image-container {
   position: fixed;
-  display: inline-block;
   width: 45%;
   min-width: 400px;
   max-width: 600px;
-  height: 252px;
-  top: 64.3%;
+  height: 256px;
+  bottom: 4%;
   right: 215px;
-  /* background-color: green; */
   padding: 0;
   margin: 0;
+  margin-bottom: 15px;
 }
 
 .image-container img {
@@ -226,7 +225,8 @@ footer {
   position: absolute;
   height: fit-content;
   left: 40px;
-  bottom: 3px;
+  bottom: 8px;
+  font-size: 12px;
 }
 
 footer p {
