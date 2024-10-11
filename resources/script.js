@@ -86,7 +86,7 @@ function ShowHyperCasualGames() {
 }
 
 document.addEventListener("DOMContentLoaded", function () {
-  var button = document.getElementsByClassName("projectsButton")[0]; // İlk homeButton öğesini al
+  var button = document.getElementsByClassName("homeButton")[0]; // İlk homeButton öğesini al
   if (button) {
     chooseSection(button); // Buton var ise fonksiyonu çağır
   }
@@ -101,8 +101,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
   introDiv.style.opacity = "0";
 
-  ShowHyperCasualGames();
-  //Intro();
+  Intro();
 
   function Intro() {
     introDiv.style.opacity = "1";
