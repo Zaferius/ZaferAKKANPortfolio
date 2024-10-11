@@ -5,6 +5,13 @@ var navButtonsTexts = [];
 
 function chooseSection(button) {
   // navButton'ların innerText'lerini bir diziye ekleyelim
+
+  var section = document.querySelector(".hyper-casual-text");
+  if (section) {
+    section.classList.remove("active");
+    section.classList.add("hidden");
+  }
+
   for (var i = 0; i < navButtons.length; i++) {
     navButtonsTexts.push(navButtons[i].innerText);
   }
@@ -58,8 +65,28 @@ function chooseSection(button) {
   }
 }
 
+function ShowHyperCasualGames() {
+  var section = document.querySelector(".hyper-casual-text");
+  if (section) {
+    section.classList.remove("hidden");
+    section.classList.add("active");
+  }
+
+  var projectsSection = document.querySelector(".projects-section");
+  if (projectsSection) {
+    projectsSection.classList.remove("active");
+    projectsSection.classList.add("hidden");
+  }
+
+  var hpGames = document.querySelector(".hp-games-section");
+  if (hpGames) {
+    hpGames.classList.remove("hidden");
+    hpGames.classList.add("active");
+  }
+}
+
 document.addEventListener("DOMContentLoaded", function () {
-  var button = document.getElementsByClassName("homeButton")[0]; // İlk homeButton öğesini al
+  var button = document.getElementsByClassName("projectsButton")[0]; // İlk homeButton öğesini al
   if (button) {
     chooseSection(button); // Buton var ise fonksiyonu çağır
   }
@@ -70,9 +97,11 @@ document.addEventListener("DOMContentLoaded", function () {
   const footer = document.getElementById("footer");
   const introDiv = document.getElementById("intro-text");
   const border = document.getElementById("main-frame");
+  const hyperCasualText = document.getElementById("hyper-casual-text");
 
   introDiv.style.opacity = "0";
 
+  ShowHyperCasualGames();
   //Intro();
 
   function Intro() {

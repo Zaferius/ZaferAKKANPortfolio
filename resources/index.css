@@ -102,8 +102,6 @@ h2 {
   pointer-events: none !important;
   position: relative; /* veya fixed */
   bottom: 43%;
-  height: 100vh; /* Tüm yükseklik */
-  /*  background-color: rgba(255, 0, 0, 0.144); */
 }
 
 .home-section p {
@@ -177,6 +175,79 @@ h2 {
     0 0 8px #ffffff3d, 0 0 12px #ffffff3d;
 }
 
+.hyper-casual-text {
+  display: inline-block;
+  margin-left: 5px;
+  width: 125px;
+  opacity: 0;
+  transition: 0.2s;
+}
+
+.hp-games-section img {
+  position: absolute;
+  border-radius: 5px;
+  width: 150px;
+}
+
+#grand-grinder {
+  bottom: 10px;
+  right: 40px;
+  width: 200px;
+}
+
+#bounce-man {
+  top: 45px;
+  right: 474px;
+  width: 156px;
+}
+
+#ball-stealer {
+  bottom: 228px;
+  right: 636px;
+  width: 170px;
+}
+
+#tower {
+  top: 259px;
+  right: 380px;
+  width: 180px;
+  transform: rotate(90deg);
+}
+
+#town-scaper {
+  top: 45px;
+  right: 310px;
+  width: 156px;
+}
+
+#stick {
+  bottom: 10px;
+  right: 250px;
+  width: 210px;
+  height: 355px;
+}
+
+#snake {
+  bottom: -63px;
+  right: 540px;
+  width: 210px;
+  height: 355px;
+  transform: rotate(90deg);
+}
+
+#pizza {
+  top: 40px;
+  right: 40px;
+  width: 263px;
+}
+
+#cutRunner {
+  bottom: 227px;
+  right: 470px;
+  width: 158px;
+  height: 137px;
+}
+
 .alt-info {
   font-size: 13px; /* Alt bilgi yazı boyutu */
   color: white; /* Daha soluk bir renk */
@@ -242,6 +313,12 @@ footer p {
 .active {
   opacity: 100%;
   pointer-events: auto;
+}
+
+@media screen and (max-width: 1080px) {
+  .hp-games-section img {
+    opacity: 0;
+  }
 }
 
 @media screen and (max-width: 768px) {
