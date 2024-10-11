@@ -319,16 +319,16 @@ footer p {
   .hp-games-section img {
     opacity: 0;
   }
-}
 
-@media screen and (max-width: 768px) {
   .hyper-casual-text {
     display: none;
   }
   .hp-button {
     pointer-events: none;
   }
+}
 
+@media screen and (max-width: 768px) {
   .sidenav ul {
     display: flex;
     margin-left: 0;
