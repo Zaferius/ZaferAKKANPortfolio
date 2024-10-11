@@ -322,7 +322,11 @@ footer p {
 }
 
 @media screen and (max-width: 768px) {
-  .sidenav {
+  .hyper-casual-text {
+    display: none;
+  }
+  .hp-button {
+    pointer-events: none;
   }
 
   .sidenav ul {
