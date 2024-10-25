@@ -17,7 +17,6 @@ function chooseSection(button) {
   }
 
   for (var i = 0; i < navButtons.length; i++) {
-    // Her section için döngü oluşturuyoruz
     navButtons[i].disabled = false;
     navButtons[i].innerText = navButtonsTexts[i];
   }
@@ -25,9 +24,9 @@ function chooseSection(button) {
   button.disabled = true;
   button.innerText = "•" + " " + button.innerText;
 
-  var sections = document.getElementsByClassName("msection"); // Tüm msection sınıflarını seçiyoruz
+  var sections = document.getElementsByClassName("msection");
   for (var i = 0; i < sections.length; i++) {
-    // Her section için döngü oluşturuyoruz
+
     sections[i].classList.remove("active");
     sections[i].classList.add("hidden");
   }
@@ -65,30 +64,10 @@ function chooseSection(button) {
   }
 }
 
-function ShowHyperCasualGames() {
-  var section = document.querySelector(".hyper-casual-text");
-  if (section) {
-    section.classList.remove("hidden");
-    section.classList.add("active");
-  }
-
-  var projectsSection = document.querySelector(".projects-section");
-  if (projectsSection) {
-    projectsSection.classList.remove("active");
-    projectsSection.classList.add("hidden");
-  }
-
-  var hpGames = document.querySelector(".hp-games-section");
-  if (hpGames) {
-    hpGames.classList.remove("hidden");
-    hpGames.classList.add("active");
-  }
-}
-
 document.addEventListener("DOMContentLoaded", function () {
-  var button = document.getElementsByClassName("homeButton")[0]; // İlk homeButton öğesini al
+  var button = document.getElementsByClassName("homeButton")[0]; 
   if (button) {
-    chooseSection(button); // Buton var ise fonksiyonu çağır
+    chooseSection(button); 
   }
 
   var contactAnchors = document.getElementsByClassName("contact-anchor");
@@ -132,7 +111,6 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   }
 
-  // Her buton için tıklama olayını dinleyen bir döngü
   buttons.forEach((button) => {
     button.addEventListener("click", applyGlowEffect);
   });
