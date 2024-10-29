@@ -44,8 +44,7 @@ body {
     height: 93.6vh;
     margin: 28.4px 28.4px 0 28.4px;
     /*  background-color: red; */
-    opacity: 0.8;
-    background-image: radial-gradient(#2b2b2b 0.5px, #101010 0.5px);
+    background-image: radial-gradient(#2b2b2b 0.5px, #101010 0.1px);
     background-size: 10px 10px;
 }
 
@@ -173,8 +172,9 @@ h2 {
 }
 
 .projects-section a:hover {
-    text-shadow: 0 0 1px #ffffff3d, 0 0 2px #ffffff3d, 0 0 4px #ffffff3d,
-        0 0 8px #ffffff3d, 0 0 12px #ffffff3d;
+    text-shadow: 0 0 1px red, 0 0 2px red, 0 0 4px red, 0 0 8px red,
+        0 0 12px red;
+    color: rgb(255, 104, 104);
 }
 
 .hyper-casual-text {
