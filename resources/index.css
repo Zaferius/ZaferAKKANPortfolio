@@ -336,7 +336,7 @@ footer p {
 
         z-index: 20;
         position: absolute; /* Konumlandırmayı tam kontrol et */
-        top: 30%; /* Alt taraftan 150px uzaklıkta olsun */
+        top: 28%; /* Alt taraftan 150px uzaklıkta olsun */
         left: 50%; /* Yatayda ortala */
         transform: translateX(-50%); /* Tam ortalamak için sola kaydır */
 
