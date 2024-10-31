@@ -73,7 +73,7 @@ function resetGif() {
 }
 
 const gifDuration = 4950; // GIF'in toplam döngü süresi (ms cinsinden, örneğin 10 saniye)
-const fireEffectTimes = [1600, 1900, 2500, 2900, 4850]; // Ateş efektinin tetikleneceği milisaniye cinsinden anlar
+const fireEffectTimes = [1550, 1900, 2400, 2750, 4750]; // Ateş efektinin tetikleneceği milisaniye cinsinden anlar
 let intervalId;
 
 function startGifEffectLoop() {
@@ -113,24 +113,24 @@ function HomeGifFireEffect() {
 document.addEventListener("DOMContentLoaded", function () {
     // GIF her yeniden başladığında loop'u baştan başlat
     const gifElement = document.getElementById("home-gif");
-    gifElement.addEventListener("load", startGifEffectLoop); // Her yükleme döngüsünde baştan başlat
-
-    var button = document.getElementsByClassName("projectsButton")[0];
-    if (button) {
-        chooseSection(button);
-    }
-
-    var contactAnchors = document.getElementsByClassName("contact-anchor");
-
     const buttons = document.querySelectorAll(".navButton");
     const footer = document.getElementById("footer");
     const introDiv = document.getElementById("intro-text");
     const border = document.getElementById("main-frame");
     const hyperCasualText = document.getElementById("hyper-casual-text");
 
+    gifElement.addEventListener("load", startGifEffectLoop); // Her yükleme döngüsünde baştan başlat
+
+    var button = document.getElementsByClassName("homeButton")[0];
+    if (button) {
+        chooseSection(button);
+    }
+
+    var contactAnchors = document.getElementsByClassName("contact-anchor");
+
     introDiv.style.opacity = "0";
 
-    //Intro();
+    Intro();
 
     function Intro() {
         introDiv.style.opacity = "1";
@@ -146,6 +146,8 @@ document.addEventListener("DOMContentLoaded", function () {
             footer.style.opacity = "1";
             border.style.animation = "fadeIn 3s ease forwards";
             footer.style.animation = "fadeIn 3s ease forwards";
+            resetGif();
+            startGifEffectLoop();
         }, 2000);
     }
     // Glow fonksiyonu (border elementine glow efekti ekleme)
