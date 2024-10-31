@@ -126,7 +126,7 @@ h2 {
     margin: 0;
     margin-bottom: 15px;
 
-    filter: drop-shadow(0mm 0mm 2.5mm crimson);
+    filter: drop-shadow(0mm 0mm 2.5mm rgb(20, 220, 180));
 }
 
 .image-container img {

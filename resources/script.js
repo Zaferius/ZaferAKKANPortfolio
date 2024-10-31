@@ -36,6 +36,9 @@ function chooseSection(button) {
             section.classList.remove("hidden");
             section.classList.add("active");
         }
+
+        resetGif();
+        startGifEffectLoop();
     }
 
     if (button.classList.contains("projectsButton")) {
@@ -63,7 +66,55 @@ function chooseSection(button) {
     }
 }
 
+function resetGif() {
+    const gif = document.getElementById("home-gif");
+    gif.src = ""; // Geçici olarak boş bırak
+    setTimeout(() => (gif.src = "./resources/images/hellevatorGif.gif"), 0); // Yeniden başlat
+}
+
+const gifDuration = 4950; // GIF'in toplam döngü süresi (ms cinsinden, örneğin 10 saniye)
+const fireEffectTimes = [1600, 1900, 2500, 2900, 4850]; // Ateş efektinin tetikleneceği milisaniye cinsinden anlar
+let intervalId;
+
+function startGifEffectLoop() {
+    if (intervalId) clearInterval(intervalId);
+
+    const startTime = Date.now();
+
+    // GIF süresi boyunca her milisaniyede bir kontrol et
+    intervalId = setInterval(() => {
+        const elapsedTime = (Date.now() - startTime) % gifDuration;
+
+        // Ateş efekti tetiklenme zamanına ulaşıldığında çalıştır
+        fireEffectTimes.forEach((time) => {
+            if (Math.abs(elapsedTime - time) < 50) {
+                // Yaklaşık eşitlik kontrolü
+                HomeGifFireEffect();
+            }
+        });
+    }, 50); // Her 50 ms'de bir k
+}
+
+// HomeGifFireEffect fonksiyonu
+function HomeGifFireEffect() {
+    const gifContainer = document.getElementById("home-gif");
+
+    // Gölge rengini ve boyutunu geçici olarak arttır
+    gifContainer.style.transition = "none";
+    gifContainer.style.boxShadow = "0 0 25px rgba(255, 228, 0, 0.8)";
+
+    // Belirli bir süre sonra gölgeyi eski haline getir
+    setTimeout(() => {
+        gifContainer.style.transition = "box-shadow 0.2s ease"; // Smooth dönüş
+        gifContainer.style.boxShadow = "0 0 20px rgba(255, 228, 0, 0.2)";
+    }, 100); // 200 ms sonra eski haline dönsün
+}
+
 document.addEventListener("DOMContentLoaded", function () {
+    // GIF her yeniden başladığında loop'u baştan başlat
+    const gifElement = document.getElementById("home-gif");
+    gifElement.addEventListener("load", startGifEffectLoop); // Her yükleme döngüsünde baştan başlat
+
     var button = document.getElementsByClassName("projectsButton")[0];
     if (button) {
         chooseSection(button);
