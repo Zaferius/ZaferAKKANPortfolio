@@ -4,8 +4,6 @@ var navButtons = document.getElementsByClassName("navButton");
 var navButtonsTexts = [];
 
 function chooseSection(button) {
-    // navButton'ların innerText'lerini bir diziye ekleyelim
-
     var section = document.querySelector(".hyper-casual-text");
     if (section) {
         section.classList.remove("active");
@@ -95,23 +93,20 @@ function startGifEffectLoop() {
     }, 50); // Her 50 ms'de bir k
 }
 
-// HomeGifFireEffect fonksiyonu
 function HomeGifFireEffect() {
     const gifContainer = document.getElementById("home-gif");
 
-    // Gölge rengini ve boyutunu geçici olarak arttır
     gifContainer.style.transition = "none";
     gifContainer.style.boxShadow = "0 0 25px rgba(255, 228, 0, 0.8)";
 
-    // Belirli bir süre sonra gölgeyi eski haline getir
     setTimeout(() => {
         gifContainer.style.transition = "box-shadow 0.2s ease"; // Smooth dönüş
         gifContainer.style.boxShadow = "0 0 20px rgba(255, 228, 0, 0.2)";
-    }, 100); // 200 ms sonra eski haline dönsün
+    }, 100);
 }
 
 document.addEventListener("DOMContentLoaded", function () {
-    // GIF her yeniden başladığında loop'u baştan başlat
+    //
     const gifElement = document.getElementById("home-gif");
     const buttons = document.querySelectorAll(".navButton");
     const footer = document.getElementById("footer");
@@ -119,7 +114,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const border = document.getElementById("main-frame");
     const hyperCasualText = document.getElementById("hyper-casual-text");
 
-    gifElement.addEventListener("load", startGifEffectLoop); // Her yükleme döngüsünde baştan başlat
+    gifElement.addEventListener("load", startGifEffectLoop);
 
     var button = document.getElementsByClassName("homeButton")[0];
     if (button) {
@@ -150,7 +145,7 @@ document.addEventListener("DOMContentLoaded", function () {
             startGifEffectLoop();
         }, 2000);
     }
-    // Glow fonksiyonu (border elementine glow efekti ekleme)
+
     function applyGlowEffect() {
         border.style.animation = "none";
 
